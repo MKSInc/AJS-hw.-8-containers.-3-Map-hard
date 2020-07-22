@@ -1,5 +1,7 @@
 // TODO: write your code here
-import templateFunc from './basic';
+import Settings from './Settings';
 
+const settings = new Settings();
+settings.userSettings.set('theme', 'light');
 // eslint-disable-next-line no-console
-console.log(templateFunc('test'));
+console.log(settings.settings);
